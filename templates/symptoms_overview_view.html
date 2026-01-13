@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptoms Overview</title>
+</head>
+<body>
+
+<h2>Symptoms Overview</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Patient SSN</th>
+            <th>Patient Name</th>
+            <th>Appointment Date</th>
+            <th>Appointment Time</th>
+            <th>Symptoms</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            <td>{{ row['Patient SSN'] }}</td> 
+            <td>{{ row['Patient Name'] }}</td> 
+            <td>{{ row['Appointment Date'] }}</td> 
+            <td>{{ row['Appointment Time'] }}</td>
+            <td>{{ row['Symptoms'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<script src="/static/tableClean.js"></script>
+
+
+</body>
+</html>

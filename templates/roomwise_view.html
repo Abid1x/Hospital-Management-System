@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Wise View</title>
+</head>
+<body>
+
+<h2>Room Wise View</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Patient First Name</th>
+            <th>Patient Last Name</th>
+            <th>Room Number</th>
+            <th>Department Name</th>
+            <th>Doctor First Name</th>
+            <th>Doctor Last Name</th>
+            <th>Nurse First Name</th>
+            <th>Nurse Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.patient_fname }}</td>
+            <td>{{ row.patient_lname }}</td>
+            <td>{{ row.room_num }}</td>
+            <td>{{ row.department_name }}</td>
+            <td>{{ row.doctor_fname }}</td>
+            <td>{{ row.doctor_lname }}</td>
+            <td>{{ row.nurse_fname }}</td>
+            <td>{{ row.nurse_lname }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<script src="/static/tableClean.js"></script>
+
+</body>
+</html>

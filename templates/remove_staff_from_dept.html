@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Staff from Department</title>
+</head>
+<body>
+
+<h2>Remove Staff from Department</h2>
+
+<form action="/remove_staff_from_dept/submit" method="POST">
+    Staff SSN: <input type="text" name="ssn" maxlength="11" required><br><br>
+    Department ID: <input type="number" name="dept_id" min="1" required><br><br>
+    <button type="submit">Remove Staff</button>
+</form>
+
+</body>
+</html>
+

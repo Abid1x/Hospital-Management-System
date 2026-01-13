@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outstanding Charges</title>
+</head>
+<body>
+
+<h2>Outstanding Charges Overview</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>SSN</th>
+            <th>Funds</th>
+            <th>Outstanding Charges</th>
+            <th>Number of Appointments</th>
+            <th>Number of Orders</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            <td>{{ row['firstName'] }}</td>
+            <td>{{ row['lastName'] }}</td>
+            <td>{{ row['ssn'] }}</td>
+            <td>{{ row['funds'] }}</td>
+            <td>{{ row['outstandingCharges'] }}</td>
+            <td>{{ row['numAppointments'] }}</td>
+            <td>{{ row['numOrders'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<script src="/static/tableClean.js"></script>
+
+</body>
+</html>

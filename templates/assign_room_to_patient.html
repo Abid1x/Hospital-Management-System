@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Room to Patient</title>
+</head>
+<body>
+
+<h2>Assign Room to Patient</h2>
+
+<form action="/assign_room_to_patient/submit" method="POST">
+    Patient SSN: <input type="text" name="ssn" maxlength="11" required><br><br>
+    Room Number: <input type="number" name="room_number" min="1" required><br><br>
+    Room Type: <select name="room_type" required>
+        <option value="Private">Private</option>
+        <option value="Shared">Shared</option>
+    </select><br><br>
+    <button type="submit">Assign Room</button>
+</form>
+
+</body>
+</html>
+

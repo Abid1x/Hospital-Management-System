@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+}
+
+/* Top Navigation */
+#top-nav {
+    background-color: #007c89;
+    padding: 12px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.nav-links li:hover {
+    text-decoration: underline;
+}
+
+.nav-links li.active {
+    text-decoration: underline;
+}
+
+/* Content */
+#content {
+    padding: 40px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#content.show {
+    opacity: 1;
+}
+
+/* Section Card */
+.section-card {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.section-card h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.section-desc {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f7f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #007c89;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(244, 246, 248, 0.92),
+            rgba(244, 246, 248, 0.92)
+        ),
+        url("/static/images/dashboard.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-card {
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th:hover {
+    background: #f0f0f0;
+}

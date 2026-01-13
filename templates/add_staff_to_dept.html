@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add staff to dept</title>
+</head>
+<body>
+
+<h2>Add staff to dept</h2>
+
+<form action="/add_staff_to_dept/submit" method="POST">
+    Department ID: <input name="dept_id" type="number" required><br><br>
+    SSN: <input name="ssn" type="text" maxlength="11" pattern="\d{3}-\d{2}-\d{4}" title="SSN format: XXX-XX-XXXX" required><br><br>
+    First Name: <input name="first_name" type="text" maxlength="100" required><br><br>
+    Last Name: <input name="last_name" type="text" maxlength="100" required><br><br>
+    Birthdate: <input name="birthdate" type="date" required><br><br>
+    Start Date: <input name="start_date" type="date" required><br><br>
+    Address: <input name="address" type="text" maxlength="200" required><br><br>
+    Staff ID: <input name="staff_id" type="number" required><br><br>
+    Salary: <input name="salary" type="number" min="0" required><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

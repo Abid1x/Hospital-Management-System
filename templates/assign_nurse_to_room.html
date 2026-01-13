@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Nurse to Room</title>
+</head>
+<body>
+
+<h2>Assign Nurse to Room</h2>
+
+<form action="/assign_nurse_to_room/submit" method="POST">
+    Nurse ID (SSN): <input type="text" name="nurse_id" maxlength="11" required><br><br>
+    Room Number: <input type="number" name="room_number" min="1" required><br><br>
+    <button type="submit">Assign Nurse</button>
+</form>
+
+</body>
+</html>
+
